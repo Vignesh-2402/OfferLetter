@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Automation Completion Certificate</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 1000px;
+      height: 700px;
+      border: 3px solid #004080;
+    }
+    td {
+      vertical-align: top;
+    }
+    /* Left content */
+    .left {
+      padding: 50px;
+      width: 65%;
+    }
+    .left img {
+      height: 60px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 36px;
+      color: #004080;
+      margin: 0 0 5px 0;
+    }
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #000;
+    }
+    hr {
+      border: none;
+      height: 1px;
+      background: #ccc;
+      margin: 10px 0 20px 0;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+      margin-top: 10px;
+    }
+    .footer {
+      font-size: 12px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      color: #333;
+    }
+    /* Right section */
+    .right {
+      width: 35%;
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .right img {
+      max-width: 80%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .right h2 {
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <!-- Left -->
+      <td class="left">
+        <img src="data:image/png;base64,{{ BASE64_LOGO }}" alt="Automation Logo">
+        <h1>Completion Certificate</h1>
+        <p class="subtitle">This certificate is awarded to</p>
+        <p class="name">{{ candidate.name }}</p>
+        <hr>
+        <p class="description">
+          For successfully completing the Automation Academy training program, designed to enhance
+          industry-relevant automation expertise through a curated set of specialized courses.
+        </p>
+        <p class="description">
+          Through dedication and active engagement, they have gained practical knowledge and technical skills
+          utilizing Automation’s advanced tools, systems, and platforms.
+        </p>
+        <div class="footer">
+          <span><strong>Certificate ID:</strong> AUTO-{{ candidate.id }}</span>
+          <span><strong>Date:</strong> {{ issue_date }}</span>
+        </div>
+      </td>
+      <!-- Right -->
+      <td class="right">
+        <img src="data:image/png;base64,{{ BASE64_LOGO }}" alt="Automation Logo">
+        <h2>Automation<br>Academy</h2>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

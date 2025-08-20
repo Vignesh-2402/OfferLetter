@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9faff;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  background: #007BFF;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  width: 80px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.contact-info {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.content {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  border: 2px solid #007BFF;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  color: #007BFF;
+}
+
+.signature {
+  margin-top: 60px;
+  font-style: italic;
+  text-align: right;
+  font-weight: bold;
+}
