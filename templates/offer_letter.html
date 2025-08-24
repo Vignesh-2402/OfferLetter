@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Offer Letter - Automation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fb;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      background: #007BFF;
+      color: white;
+      padding: 25px 15px;
+    }
+
+    .logo {
+      width: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .company-name {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .contact-info {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    /* Content box */
+    .content {
+      max-width: 750px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      line-height: 1.6;
+    }
+
+    h2 {
+      text-align: center;
+      color: #007BFF;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin: 15px 0;
+    }
+
+    .signature {
+      margin-top: 60px;
+      font-style: italic;
+      text-align: right;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="data:image/png;base64,{{ base64_logo }}" alt="Automation Logo" class="logo">
+    <div class="company-name">Automation</div>
+    <p class="contact-info">
+      📧 automation@example.com | 📞 +91 98765 43210 | 🔗 linkedin.com/company/automation
+    </p>
+  </header>
+
+  <main class="content">
+    <h2>Offer Letter</h2>
+    <p>Date: {{ issue_date }}</p>
+
+    <p>Dear {{ candidate.name }},</p>
+
+    <p>We are pleased to offer you the position of <strong>{{ candidate.role or "your role" }}</strong> at Automation.</p>
+
+    <p>Your employment will commence on <strong>{{ candidate.start_date or "your start date" }}</strong>.</p>
+
+    <p>We believe your skills and experience will be an excellent addition to our team, and we look forward to working with you.</p>
+
+    <p>Please sign and return this letter to confirm your acceptance.</p>
+
+    <p>If you have any questions, feel free to reach out.</p>
+
+    <p>Sincerely,</p>
+
+    <p class="signature">HR Manager<br>Automation</p>
+  </main>
+</body>
+</html>
